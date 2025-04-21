@@ -211,32 +211,37 @@ nav{ margin-right: 200px;}
         left: 80px;
     }
 
-    .banner-card .card-info{
-        display: flex;
-        align-items: center;
-        margin-bottom: 20px;
-    }
+    .banner-card .card-info {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
 
-        .banner-card .card-info div{
-            display: flex;
-            align-items: center;
-            margin-right: 20px;
-        }
+.banner-card .card-info div {
+    display: flex;
+    align-items: center;
+    margin-right: 20px;
+}
 
-        .banner-card .card-info ion-icon{
-            font-size: 20px;
-            color: var(--azure);
-            margin-right: 5px;
-        }
+.banner-card .card-info ion-icon {
+    font-size: 20px;
+    color: var(--azure);
+    margin-right: 5px;
+}
 
-        .banner-card .card-info span{ font-weight: var(--fw6);}
+.banner-card .card-info span {
+    display: block;  /* Forces each span to be on its own line */
+    font-weight: var(--fw6);
+}
 
-        .banner-card .card-info .quality{
-            background: var(--azure);
-            padding: 2px 5px;
-            border-radius: 5px;
-            font-weight: var(--fw7);
-        }
+.banner-card .card-info .quality {
+    background: var(--azure);
+    padding: 2px 5px;
+    border-radius: 5px;
+    font-weight: var(--fw7);
+}
+
 
     .banner-card .card-title{
         font-size: 3em;
@@ -407,6 +412,7 @@ input ~ .checked-radio-bg{
 
     .movie-card .card-info{
         display: flex;
+        flex-direction: column;
         justify-content: space-evenly;
         font-size: var(--font-size-extra-small);
         font-weight: var(--fw5);
