@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Movie Details</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="movie.css" />
+</head>
+<body>
+  <div class="container">
+    <header class="">
+        <div class="navbar">
+            <button class="navbar-menu-btn">
+                <span class="one"></span>
+                <span class="two"></span>
+                <span class="three"></span>
+            </button>
+
+            <a href="#" class="navbar-brand">
+                <img src="https://i.postimg.cc/KvjKVZXj/logo.png" alt="logo">
+            </a>
+
+            <nav class="">
+                <ul class="navbar-nav">
+                    <li><a href="#" class="navbar-link">Home</a></li>
+                    <li><a href="#category" class="navbar-link">Category</a></li>
+                    <li><a href="#live" class="navbar-link indicator">LIVE</a></li>
+                </ul>
+            </nav>
+
+            <div class="navbar-actions">
+                <form action="#" class="navbar-form">
+                    <input type="text" name="search" placeholder="I'm looking for..." class="navbar-form-search">
+
+                    <button class="navbar-form-btn">
+                        <ion-icon name="search"></ion-icon>
+                    </button>
+
+                    <button class="navbar-form-close">
+                        <ion-icon name="close-circle-outline"></ion-icon>
+                    </button>
+                </form>
+
+                <button class="navbar-search-btn">
+                    <ion-icon name="search"></ion-icon>
+                </button>
+
+                <a href="#" class="navbar-signin">
+                    <span>Sign In</span>
+                    <ion-icon name="log-in"></ion-icon>
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <main>
+      <section class="banner" id="detailBanner" style="margin-top: 100px;">
+        <div class="banner-card" style="height: auto;">
+          <img id="movie-image" src="" alt="Movie Banner" class="banner-img" />
+          <div class="card-content">
+            <div class="card-info">
+              <div class="genre">
+                <ion-icon name="film"></ion-icon>
+                <span id="movie-genre"></span>
+              </div><br>
+              <div class="year">
+                <ion-icon name="calendar"></ion-icon>
+                <span id="year"></span>
+              </div><br>
+              <div class="duration">
+                <ion-icon name="time"></ion-icon>
+                <span id="movie-duration"></span>
+              </div>
+            </div>
+            <h2 class="card-title" id="movie-title" style="text-align: center;"></h2>
+          </div>
+        </div>
+      </section>
+
+      <!-- Description Section -->
+      <section class="movies" style="margin-top: 30px;">
+        <h2 class="section-heading">Movie Description</h2>
+        <p id="movie-description" style="font-size: 16px; color: var(--off-white); line-height: 1.8;">
+          Loading description...
+        </p>
+      </section>
+    </main>
+
+    <footer>
+      <!-- Reuse your existing footer -->
+    </footer>
+  </div>
+
+  <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+  <script src="movie.js"></script> <!-- You’ll write your JS logic here -->
+</body>
+</html>

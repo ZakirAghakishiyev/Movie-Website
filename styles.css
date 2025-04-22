@@ -811,3 +811,22 @@ footer{
 
     .wrapper{ margin-bottom: 20px;}
 }
+
+.pagination{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 60px;
+}
+.pagination button{
+    background: var(--oxford-blue);
+    padding: 10px 20px;
+    border-radius: 15px;
+    font-size: var(--font-size-small);
+    font-weight: var(--fw5);
+    color: var(--white);
+    margin: 0 10px;
+}
+.pagination button:hover{
+    background: var(--light-azure);
+}
